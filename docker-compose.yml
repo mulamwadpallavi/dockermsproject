@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: mulamwadpallavi/paytmmovies:latest
+    image: mulamwadpallavi/moviesrepo:latest
     ports:
       - 91:80
     deploy:
       replicas: 3
   train:
-    image: mulamwadpallavi/paytmtrain:latest
+    image: mulamwadpallavi/trainrepo:latest
     ports:
       - 92:80
     deploy:
       replicas: 3
   recharge:
-    image: mulamwadpallavi/paytmrecharge:latest
+    image: mulamwadpallavi/rechargerepo:latest
     ports:
       - 93:80
     deploy:
       replicas: 3
   dth:
-    image: mulamwadpallavi/paytmdth:latest
+    image: mulamwadpallavi/dthrepo:latest
     ports:
       - 94:80
     deploy:
